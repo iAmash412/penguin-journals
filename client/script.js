@@ -281,9 +281,50 @@ async function fetchLatestPosts() {
               </div>
             </div>
 
+            <div class="row d-flex justify-content-center">
+          <div class="row commentContainer p-3 m-2">
+            <div class="col-sm-1">
+              <i class="fa-solid fa-circle-user userCommentIcon"></i>
             </div>
+            <div class="col-sm-11">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              risus, mauris diam urna integer hendrerit tincidunt scelerisque
+              sit.
+            </div>
+            <div class="commentTimeStamp d-flex justify-content-end">
+              2 days, 4 hours ago
+            </div>
+          </div>
+          <div class="row commentContainer p-3 m-2">
+            <div class="col-sm-1">
+              <i class="fa-solid fa-circle-user userCommentIcon"></i>
+            </div>
+            <div class="col-sm-11">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              risus, mauris diam urna integer hendrerit tincidunt scelerisque
+              sit.
+            </div>
+            <div class="commentTimeStamp d-flex justify-content-end">
+              2 days, 4 hours ago
+            </div>
+          </div>
+          <div class="row commentContainer p-3 m-2">
+            <div class="col-sm-1">
+              <i class="fa-solid fa-circle-user userCommentIcon"></i>
+            </div>
+            <div class="col-sm-11">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              risus, mauris diam urna integer hendrerit tincidunt scelerisque
+              sit.
+            </div>
+            <div class="commentTimeStamp d-flex justify-content-end">
+              2 days, 4 hours ago
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
+    </div>
+  </div>
                       `;
         });
         document.getElementById("latestPostsOutput").innerHTML =
@@ -357,4 +398,4 @@ function init() {
   });
 }
 
-module.exports = fetchLatestPosts;
+// module.exports = fetchLatestPosts;

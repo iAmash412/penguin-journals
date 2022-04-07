@@ -1,1 +1,125 @@
-[{"id":1,"title":"fwarfwag","Content":"wafawr","emojiOne":0,"emojiTwo":0,"emojiThree":1,"comments":[],"timeStamp":""},{"id":2,"title":"TestTitleTwo","Content":"TestContentTwo","emojiOne":1,"emojiTwo":0,"emojiThree":0,"comments":[{"id":1,"Comment":"Omg I love how you are helping the penguins. I will now share my work I do to help penguins on Pengiun Journals too!","timeStamp":20220406},{"id":2,"Comment":"This is the best!!!","timeStamp":20220405}],"timeStamp":""},{"Id":3,"title":"wrgrw","Content":"rwgvwrqg","emojiOne":0,"emojiTwo":0,"emojiThree":0,"comments":[],"timeStamp":""},{"Id":4,"title":"wrgvwr","Content":"rwggv","emojiOne":0,"emojiTwo":0,"emojiThree":0,"comments":[],"timeStamp":""},{"id":5,"title":"ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss","Content":"sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss","emojiOne":0,"emojiTwo":0,"emojiThree":0,"comments":[],"timeStamp":""},{"id":6,"title":"Hi my name is:","Content":"SLim shady","emojiOne":0,"emojiTwo":0,"emojiThree":0,"comments":[],"timeStamp":""},{"id":7,"title":"ddddd","Content":"ddd","emojiOne":0,"emojiTwo":0,"emojiThree":0,"comments":[],"timeStamp":""},{"id":8,"title":"sddddd","Content":"dddddd","emojiOne":0,"emojiTwo":0,"emojiThree":0,"comments":[],"timeStamp":"7-4-2022 15:56:49"},{"id":9,"title":"fwarfwag","Content":"wafawr","emojiOne":0,"emojiTwo":0,"emojiThree":0,"comments":[],"timeStamp":"7-4-2022 18:0:15"},{"id":10,"title":"fwarfwag","Content":"wafawr","emojiOne":0,"emojiTwo":0,"emojiThree":0,"comments":[],"timeStamp":"7-4-2022 18:0:46"},{"id":11,"title":"fwarfwag","Content":"wafawr","emojiOne":0,"emojiTwo":0,"emojiThree":0,"comments":[],"timeStamp":"7-4-2022 18:1:29"}]
+[
+  {
+    "id": 1,
+    "title": "World Penguin Day: Penguin Conservation Status",
+    "Content": "<p>April 25th is World Penguin Day! As we celebrate these wonderful and fascinating flightless birds on this day, let’s check in with how the 18 different species are doing. Conservation status for each species is noted in terms of its International Union for the Conservation of Nature (IUCN) Red List designation.</p> <h5>Adelie Penguin</h5><p>The Adelie Penguin is listed as “Least Concern” on the IUCN Red List. Their populations were feared to be decreasing until a previously unknown “supercolony” consisting of an estimated 1.5 million individuals was discovered on remote Antarctic islands in 2018. Surprisingly, these birds were located in part due to the discovery of huge guano stains on NASA satellite imagery.<h5>African Penguin</h5>The IUCN Red List considers the African Penguin to be in the “Endangered” category. Populations have declined by almost 65% since 1989 due to a number of different threats like oil spills and overfishing of food sources by humans. Small victories have been noted in recent years, such as the designation of Robben Island, historically an important breeding island for the species, as a protected marine site in 2019. </p><h5>Chinstrap Penguin</h5><p>Chinstrap Penguins are currently listed as “Least Concern.” New research published in 2020 reported the results of one of the first censuses of Chinstrap colonies since the 1970s. They reported decreases of up to 50% at some of the colony sites studied. As with other penguin species, increased monitoring of populations could be very useful in helping scientists paint a more accurate picture of how these species are coping with various challenges in their environment.</p><h5>Emperor Penguin</h5><p>Perhaps the most well known of all penguin species, the Emperor Penguin is designated as “Near Threatened.” Currently, the population trend of this species is fairly stable, but their reproductive strategy and natural history is linked to the seasonal sea ice of Antarctica. Predictive modeling suggests that over the course of the next century, climate change will effect the formation of Antarctic sea ice enough to significantly imperil this species.</p>",
+    "emojiOne": 1,
+    "emojiTwo": 0,
+    "emojiThree": 0,
+    "comments": [
+      {
+        "id": 1,
+        "Comment": "Omg I love how you are helping the penguins. I will now share my work I do to help penguins on Pengiun Journals too!",
+        "timeStamp": 20220406
+      },
+      {
+        "id": 2,
+        "Comment": "This is the best!!!",
+        "timeStamp": 20220405
+      }
+    ],
+    "timeStamp": "7-4-2022 20:19:34"
+  },
+  {
+    "id": 2,
+    "title": "The Penguin Glow: Penguins Teach Us about Hope and Resilience",
+    "Content": "<p>My wife, Susan Mann, and I were sitting on a chunk of ice on the shore of Neko Harbor on the Antarctic Peninsula. A light snow was falling. We had stopped here to watch a Gentoo Penguin sitting on an egg in its nest of pebbles.</p><p>The penguin rose to its feet. Its bright orange beak pointed to a small hole in the egg. We could see the tip of the chick’s beak. A penguin was hatching.</p><p>It seemed almost miraculous. In this harsh climate—one of the most unforgiving places on earth—we watched as this tiny chick emerged from the egg.</p><p>For seventeen years, my wife Susan and I traveled throughout the Southern Hemisphere on a quest to see all eighteen of the world’s species of penguins in the wild. Our journeys took us to some of the wildest and most remote places on the planet. This was one of the most memorable moments in our quest because it embodied something at the heart of the appeal penguins have for us.</p><p>Penguins offer living lessons in hope and resilience.We find ourselves slouching into a new year. Weary, worried, and burdened, we are living through a dark time of an out-of-control virus, the violence in our presidential election, and a planet careening toward disaster. Penguins are</p>",
+    "emojiOne": 10,
+    "emojiTwo": 1,
+    "emojiThree": 0,
+    "comments": [
+      {
+        "id": 1,
+        "Comment": "Omg I love how you are helping the penguins. I will now share my work I do to help penguins on Pengiun Journals too!",
+        "timeStamp": 20220406
+      },
+      {
+        "id": 2,
+        "Comment": "This is the best!!!",
+        "timeStamp": 20220405
+      },
+      {
+        "id": 3,
+        "Comment": "Omg I love how you are helping the penguins. I will now share my work I do to help penguins on Pengiun Journals too!",
+        "timeStamp": 20220406
+      },
+      {
+        "id": 4,
+        "Comment": "This is the best!!!",
+        "timeStamp": 20220405
+      }
+    ],
+    "timeStamp": "7-4-2022 20:27:56"
+  },
+  {
+    "id": 3,
+    "title": "How Can You Help Penguins?",
+    "Content": "<h5>Threats to penguins</h5><p>There are many threats to penguins. From toxic plastics, resource competition, habitat destruction to invasive species, these animals need as much help as we can possibly give them. First, we will look into the problem’s penguins are facing on a regular basis and what can be done to help now and in the future.</p><h5>Plastic pollution</h5><p>In a 2015 study, Wilcox and his colleagues predicted that the concentration of plastics found in the ocean globally would be up to 580,000 pieces per km2 affecting around 186 different seabird species including penguins[1]. The two main ways that plastic effects wildlife is through ingestion and entanglement. Ingestion ranges in its effects, causing blockages in the gut and the leaching of toxins that eventually damage vital organs, which can lead to cancers and offspring birth defects[2]. Entanglement is just as fatal, with many species unable to free themselves from non – perishable plastics and discarded fishing equipment. Leading us onto the next threat to penguins: overfishing.</p> <h5>Competition for resources</h5> <p>Penguin diets consists almost exclusively of fish. According Trathan, et al (2014), there is currently a shortage of studies that</p> ",
+    "emojiOne": 6,
+    "emojiTwo": 1,
+    "emojiThree": 2,
+    "comments": [
+      {
+        "id": 1,
+        "Comment": "Omg I love how you are helping the penguins. I will now share my work I do to help penguins on Pengiun Journals too!",
+        "timeStamp": 20220406
+      },
+      {
+        "id": 2,
+        "Comment": "This is the best!!!",
+        "timeStamp": 20220405
+      },
+      {
+        "id": 3,
+        "Comment": "Omg I love how you are helping the penguins. I will now share my work I do to help penguins on Pengiun Journals too!",
+        "timeStamp": 20220406
+      },
+      {
+        "id": 4,
+        "Comment": "This is the best!!!",
+        "timeStamp": 20220405
+      },
+      {
+        "id": 5,
+        "Comment": "Omg I love how you are helping the penguins. I will now share my work I do to help penguins on Pengiun Journals too!",
+        "timeStamp": 20220406
+      },
+      {
+        "id": 6,
+        "Comment": "This is the best!!!",
+        "timeStamp": 20220405
+      },
+      {
+        "id": 7,
+        "Comment": "Omg I love how you are helping the penguins. I will now share my work I do to help penguins on Pengiun Journals too!",
+        "timeStamp": 20220406
+      },
+      {
+        "id": 8,
+        "Comment": "This is the best!!!",
+        "timeStamp": 20220405
+      }
+    ],
+    "timeStamp": "7-4-2022 20:29:15"
+  },
+  {
+    "id": 4,
+    "title": "The Usefulness of Penguin Poo",
+    "Content": "<p>Let’s talk about poo. All animals produce it but there’s something rather special about penguin poo. Guano is excrement produced specifically from bats and seabirds (poop), including the 18 species of penguin that waddle around the Southern Hemisphere of our planet.</p><h5>What’s so special about penguin poop?</h5><p>Many species of penguin including Humboldt Penguins use guano to build their nests. They scrape out layers of soil and poo using the claws on their feet to create burrows. These burrows offer protection for themselves and their chicks from the elements and any potential predators. However, not only is penguin poo a brilliant resource for penguins, it has been highly sought after for use by humans.</p><p>Guano is normally used as a fertiliser as it is very high in nitrogen but has even been used to manufacture gunpowder! It was highly sought after during the early 19th century before the use of synthetic fertilizers, and was primarily extracted from Peru, the home of the Humboldt Penguin.</p><p>While using penguin poo is highly resourceful, the collection of guano can be devastating for penguins, as it destroys potential sites for nesting. Parent penguins are forced to create small scrapes </p>",
+    "emojiOne": 0,
+    "emojiTwo": 8,
+    "emojiThree": 5,
+    "comments": [],
+    "timeStamp": "7-4-2022 20:29:56"
+  },
+  {
+    "id": 5,
+    "title": "Yellow-eyed Penguins – one of the rarest penguins in the world",
+    "Content": "<p>The Yellow-eyed Penguin is one of the rarest penguin species in the world. It is found north of the Antarctic Ocean, along the coast of Southern New Zealand (Ellenberg, Mattern and Seddon, 2009). As the name suggests, the penguin is easily identifiable by the yellow colour around its eyes, along with a brightly coloured yellowish line that runs from its eyes round the back of the head.</p><h5>Yellow-eyed Penguin characteristics</h5><p>Like other penguins, the Yellow-eyed Penguin is carnivorous and preys on marine animals, such as crustaceans, cephalopods and fish. They are one of the larger species and can grow to approximately 75cm in height (Ellenberg et al., 2007). The penguins will breed once a year with their mate, who remain faithful to each other. The female will lay two eggs and both parents will help with incubating the eggs until they hatch. Once hatched, the chicks will stay with their parents until approximately twelve months old. The nesting sites for Yellow-eyed Penguins can be found in the forestry and shrubs that run alongside the southeast coast of New Zealand (Doc.govt.nz, 2019). Historically, the nesting sites have been undisturbed, however in recent years the penguins have h</p>",
+    "emojiOne": 8,
+    "emojiTwo": 0,
+    "emojiThree": 0,
+    "comments": [],
+    "timeStamp": "7-4-2022 20:36:12"
+  }
+]
