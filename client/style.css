@@ -1,5 +1,14 @@
 /* *********************************************************************************** */
-/* Generic  */
+/* Fonts  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+
+/* *********************************************************************************** */
+/* Generic  */ mine
 
 #newPostSection,
 #topPostSection,
@@ -13,10 +22,29 @@
 .individualContainer {
   background-color: #f8f9fa;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  font-family: poppins, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-color: #38aecc;
+  font-family: poppins, sans-serif;
 }
 
 .row {
   padding-right: 0;
+}
+
+.btn {
+
+  color: #ffffff;
+  background-color: #38aecc;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ffb622;
+  color: black;
 }
 
 /* *********************************************************************************** */
@@ -25,6 +53,7 @@
 .navbar {
   padding: 10px;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+  background-color: #ffb622;
 }
 
 .navbar-brand {
@@ -42,6 +71,15 @@
   position: absolute;
   transform: translate(-50%);
 }
+
+
+
+#searchBtn:hover {
+  background-color: white;
+  color:  #0090c1; 
+  border: 1px solid;
+}
+
 
 /* Hamburger Button */
 
@@ -123,7 +161,7 @@
   text-align: center;
   padding: 1px 24px;
   color: #333;
-  font-family: "Roboto", sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
@@ -141,12 +179,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 420px;
+  height: 500px;
+  margin: 0px 60px;
+  border-radius: 10px;
 }
 
 #heroText {
   align-self: center;
   padding-top: 100px;
+  margin: 0px 120px;
+  font-family: poppins, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #heroTitle,
@@ -155,6 +197,7 @@
   color: #000;
   margin: auto;
   text-align: center;
+  font-family: lato, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #heroTitle {
@@ -168,6 +211,21 @@
 /* *********************************************************************************** */
 /* New post section  */
 
+.form-label{
+  margin-top: 15px;
+  font-size: 24px;
+  font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#newPostContainer {
+  background-color: white;
+  border-radius: 10px;
+  height: 450px;
+  margin-top: 50px;
+}
+
+
+
 #newPostsTitle {
   padding-top: 20px;
   text-align: center;
@@ -175,6 +233,14 @@
 
 #newPostContainer h5 {
   margin-top: 0.75rem;
+}
+
+#postTitleContent{
+  font-family: lato, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#postBodyContent{
+  font-family: lato, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 #postTitleContent::placeholder,
@@ -188,6 +254,7 @@
 }
 #createPostBtn {
   width: 200px;
+  height: 40px;
 }
 
 #addGifBtn:hover {
@@ -200,39 +267,43 @@
 /* ********** */
 /* Gif Menu */
 #gif__toggle {
-  opacity: 0;
-}
-#gif__toggle:checked ~ .gif__box {
-  left: 0 !important;
-}
-.gif__btn {
-  position: relative;
-  top: 0;
-  left: -20px;
-  width: 46px;
-  height: 46px;
-  cursor: pointer;
-}
-.gif__btn > span::before {
-  content: "";
-  top: -8px;
-}
-*/ .gif__btn > span::after {
-  content: "";
-  top: 8px;
-}
-.out {
+    opacity: 0;
+  }
+  #gif__toggle:checked ~ .gif__box {
+    left: 0 !important;
+  }
+  .gif__btn {
+    position: relative;
+    top: 0;
+    left: -20px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+  } 
+  .gif__btn > span::before {
+    content: '';
+    top: -8px;
+  } */
+   .gif__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .out1,
+.out2 .out3,
+.out4 .out5,
+.out6 {
   z-index: 1;
+  justify-content: center;
 }
 .gif__box {
   display: block;
-  position: fixed;
-  top: 41.5%;
-  left: -100%;
+  position: relative;
+  bottom: 49%;
+  left: -140%;
   width: 350px;
   height: 40%;
-  margin: 40px;
-  padding: 10px 0;
+  margin: 20px;
+  padding: 10px 10px;
   list-style: none;
   background-color: #eceff1;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
@@ -242,40 +313,39 @@
   z-index: 2;
 }
 
-.searchInput {
-  padding: 0;
-}
-.gif__item {
-  height: 120px;
-  width: 148px;
-  display: grid;
-  z-index: inherit;
-  padding: 30px;
-  color: red;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  text-align: center;
-  font-weight: 600;
-  text-decoration: none;
-  transition-duration: 0.25s;
-  z-index: inherit;
-}
+  .searchInput{
+      padding: 0;
+  }
+  .gif__item {
+    height: 120px;
+    width: 100px;
+    display: grid;
+    z-index: inherit;
+    padding: 30px;
+    color: red;
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    z-index: inherit;
+  }
 
-.margin-10 {
-  margin-left: -10px;
-  margin-right: -10px;
-}
 
-.gif__item:hover {
-  background-color: #cfd8dc;
-}
+
 
 /* Gif Menu */
 /* ********** */
 
+#createPostBtn {
+  background-color: #ffb622;
+  color: black;
+}
+
 #createPostBtn:hover {
-  color: #0d6efd;
-  background-color: transparent;
+  color: white;
+  background-color: #38aecc;
 }
 /* *********************************************************************************** */
 /* Top post section  */
@@ -312,9 +382,16 @@
   width: 50%;
 }
 
+.titleLines {
+  width: 50%;
+  color: white;
+}
+
 #latestPostsTitle {
   /* margin-top: 20px; */
   text-align: center;
+  color: white;
+    font-weight: 700;
 }
 
 /* *********************************************************************************** */
@@ -355,6 +432,7 @@
   padding: 0;
   margin: 0;
   color: #adb5bd;
+ background-color: transparent;
 }
 
 .postEllipsisBtn:hover {
@@ -464,6 +542,12 @@
 /* Footer section  */
 
 /* For line breaker */
+.foot{
+  background-color: #007ca5
+}
+
+
+
 .h {
   width: 100%;
   height: 2px;
@@ -473,7 +557,7 @@
 }
 
 #copyrightContainer {
-  background-color: #d7d7d7;
+  background-color: #005673;
 }
 
 #copyrightContainer a:hover {
@@ -483,6 +567,7 @@
 
 #credits {
   float: left;
+  color: white;
 }
 
 #credits a {
@@ -493,9 +578,14 @@
   color: black;
 }
 
+#socialMediaTitle{
+  color: #ffffff;
+}
+
 @media screen and (min-width: 992px) {
   #termsAndConditions {
     float: right;
     color: black;
   }
 }
+
