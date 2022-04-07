@@ -1,0 +1,501 @@
+/* *********************************************************************************** */
+/* Generic  */
+
+#newPostSection,
+#topPostSection,
+#individualPostSection {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#newPostContainer,
+#topPostContainer,
+.individualContainer {
+  background-color: #f8f9fa;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row {
+  padding-right: 0;
+}
+
+/* *********************************************************************************** */
+/* Navbar section  */
+
+.navbar {
+  padding: 10px;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.penguin-logo {
+  padding: 5px;
+}
+
+.search-box {
+  top: 25%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+}
+
+/* Hamburger Button */
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+
+.menu__btn {
+  position: fixed;
+  top: 36px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 10%;
+  right: -150%;
+  width: 300px;
+  height: 61.5%;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  border-radius: 5px;
+}
+
+.menu__contents {
+  margin-top: -60px;
+}
+
+.menu__item {
+  display: block;
+  text-align: center;
+  padding: 1px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+
+/* *********************************************************************************** */
+/* Hero section  */
+#heroImage {
+  background-image: url("images/pengiunsImage.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 420px;
+}
+
+#heroText {
+  align-self: center;
+  padding-top: 100px;
+}
+
+#heroTitle,
+#heroDescription {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  margin: auto;
+  text-align: center;
+}
+
+#heroTitle {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#heroDescription {
+  padding-bottom: 20px;
+}
+
+/* *********************************************************************************** */
+/* New post section  */
+
+#newPostsTitle {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#newPostContainer h5 {
+  margin-top: 0.75rem;
+}
+
+#postTitleContent::placeholder,
+#postBodyContent::placeholder {
+  font-size: 1.25rem;
+}
+
+#addGifBtn {
+  width: 50px;
+  margin: 17px;
+}
+#createPostBtn {
+  width: 200px;
+}
+
+#addGifBtn:hover {
+  filter: invert(62%) sepia(0%) saturate(1113%) hue-rotate(158deg)
+    brightness(51%) contrast(93%); /* https://codepen.io/sosuke/pen/Pjoqqp */
+  border-radius: 10px;
+  transition: 0.2s linear;
+}
+
+/* ********** */
+/* Gif Menu */
+#gif__toggle {
+  opacity: 0;
+}
+#gif__toggle:checked ~ .gif__box {
+  left: 0 !important;
+}
+.gif__btn {
+  position: relative;
+  top: 0;
+  left: -20px;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+}
+.gif__btn > span::before {
+  content: "";
+  top: -8px;
+}
+*/ .gif__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.out {
+  z-index: 1;
+}
+.gif__box {
+  display: block;
+  position: fixed;
+  top: 41.5%;
+  left: -100%;
+  width: 350px;
+  height: 40%;
+  margin: 40px;
+  padding: 10px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  border-radius: 10px;
+  overflow: auto;
+  z-index: 2;
+}
+
+.searchInput {
+  padding: 0;
+}
+.gif__item {
+  height: 120px;
+  width: 148px;
+  display: grid;
+  z-index: inherit;
+  padding: 30px;
+  color: red;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  z-index: inherit;
+}
+
+.margin-10 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.gif__item:hover {
+  background-color: #cfd8dc;
+}
+
+/* Gif Menu */
+/* ********** */
+
+#createPostBtn:hover {
+  color: #0d6efd;
+  background-color: transparent;
+}
+/* *********************************************************************************** */
+/* Top post section  */
+
+#topPostContent {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+#topPostsTitle {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.carousel-caption {
+  position: relative;
+  color: #000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+/* *********************************************************************************** */
+/* Latest Post Section  */
+#latestPostContent {
+  padding: 20px;
+}
+
+.titleLine {
+  width: 50%;
+}
+
+#latestPostsTitle {
+  /* margin-top: 20px; */
+  text-align: center;
+}
+
+/* *********************************************************************************** */
+/* Individual Post Section  */
+
+.individualContainer {
+  margin-top: 25px;
+}
+
+.individualPostContent {
+  padding: 20px;
+}
+
+.emojiCol {
+  padding-right: 0;
+}
+
+.emoji {
+  font-size: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.emoji:hover {
+  background-color: #dde1e4;
+}
+
+.emojiCounter {
+  font-size: 1rem;
+}
+
+.postEllipsisBtn {
+  float: right;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  color: #adb5bd;
+}
+
+.postEllipsisBtn:hover {
+  color: #000;
+}
+
+.readMoreBtn {
+  position: relative;
+  right: 0;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.horizontalEmojis {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+}
+
+.emojiComments {
+  font-size: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+
+.emojiComments:hover {
+  background-color: #dde1e4;
+}
+
+.emojiCommentsCounter {
+  font-size: 0.8rem;
+}
+
+.icons {
+  align-self: center;
+}
+
+#postBodySection {
+  transition: all 0.5s;
+}
+
+#postBodySection.min {
+  transition: all 0.5s;
+  height: 150px;
+  overflow: hidden;
+}
+
+.sendCommentCol {
+  padding-right: 0;
+}
+
+.sendCommentBtn {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .sendCommentBtn {
+    margin-top: 20px;
+  }
+}
+
+#commentsSection {
+  transition: all 0.5s;
+}
+
+#commentsSection.hide {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.commentCounter {
+  color: #000;
+}
+
+.commentContainer {
+  background-color: #ffffff;
+}
+
+.userCommentIcon {
+  font-size: 2.25rem;
+}
+
+.commentIconAndNumber {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.toggleCommentsBtn {
+  border: none;
+  background-color: #dde1e4;
+  border-radius: 0.25rem;
+}
+
+.toggleCommentsBtn:hover {
+  background-color: transparent;
+}
+
+/* *********************************************************************************** */
+/* Footer section  */
+
+/* For line breaker */
+.h {
+  width: 100%;
+  height: 2px;
+  border: 0 none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#copyrightContainer {
+  background-color: #d7d7d7;
+}
+
+#copyrightContainer a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#credits {
+  float: left;
+}
+
+#credits a {
+  color: black;
+}
+
+#termsAndConditions {
+  color: black;
+}
+
+@media screen and (min-width: 992px) {
+  #termsAndConditions {
+    float: right;
+    color: black;
+  }
+}

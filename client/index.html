@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PJ - Penguin Journals</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/penguin-logo.png" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/08011ee24d.js" crossorigin="anonymous"></script>
+  <!-- External Style sheet  -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- External js file  -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!--************************************************************************************************-->
+  <!-- NAVBAR -->
+  <!--************************************************************************************************-->
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="h-100 d-inline-block navbar-brand col-sm-3" href="#"><img class="penguin-logo"
+          src="images/penguin-logo.png" alt="Penguin logo" width="40vw" /></a>
+          <h1>PJ</h1>
+
+      <!-- Search Bar-->
+      <div class="col-sm-6 col-6 my-auto search-box">
+        <div class="input-group form-container">
+          <input type="text" name="search" class="form-control search-input" placeholder="" autocomplete="off" />
+          <button class="btn btn-outline-primary" type="submit">
+            Search
+          </button>
+        </div>
+      </div>
+      <!-- Hamburger Menu-->
+      <div class="hamburger-menu col-sm-6">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <div class="menu__contents">
+            <li>
+              <a class="menu__item home" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                Bookmarks
+              </a>
+            </li>
+
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-list"></i>
+                </div>
+                Lists
+              </a>
+            </li>
+
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-circle-info"></i>
+                </div>
+                About
+              </a>
+            </li>
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-gear"></i>
+                </div>
+                Options
+              </a>
+            </li>
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-people-group"></i>
+                </div>
+                Team
+              </a>
+            </li>
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-address-book"></i>
+                </div>
+                Contact
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <!-- Hamburger Menu End-->
+    </div>
+  </nav>
+  <!-- Navbar End-->
+
+
+  <!--************************************************************************************************-->
+  <!-- HEADER SECTION -->
+  <!--************************************************************************************************-->
+  <header>
+    <div id="heroImage">
+      <div class="container-sm">
+        <div id="heroText">
+          <h1 class="display-4" id="heroTitle">
+            <strong>Penguin Journals</strong>
+          </h1>
+          <h5 id="heroDescription">
+            We are a group of conservationists of all penguins. With climate
+            change having a large impact on some penguin species we journal
+            what our community is doing to help these amazing birds!
+          </h5>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER SECTION END -->
+
+  <!--************************************************************************************************-->
+  <!-- NEW POST SECTION -->
+  <!--************************************************************************************************-->
+  <section id="newPostSection">
+      <div class="container-md" id="newPostContainer">
+        <form>
+          <h2 id="newPostsTitle">Create a new post</h2>
+          <hr class="mx-auto titleLine" />
+          <div class="px-4">
+            <h5>Title</h5>
+            <input
+              name ="postTitleContent"
+              type="text"
+              class="form-control"
+              id="postTitleContent"
+              placeholder="Give your post a title"
+              required
+            />
+
+            <h5>Body</h5>
+            <textarea
+              name="postBodyContent"
+              id="postBodyContent"
+              rows="5"
+              maxlength="1200"
+              class="form-control"
+              placeholder="What’s on your mind & what have you been up to today to help the penguins ..."
+              required
+            ></textarea>
+            
+            <div class="d-flex justify-content-between">
+              
+              <!--Gif Menu-->
+              <div class="hamburger-menu">
+                <input id="gif__toggle" type="checkbox"/>
+                <label class="gif__btn" for="gif__toggle">
+                  <span><img type="button" id="addGifBtn" class="gif" src="images/gif_box_black_24dp.svg"></span>
+                </label>
+            
+                <ul class="gif__box">
+                  <li>
+                    <a class="gif__search" href="#">
+              <!--Gif Search Bar-->
+                      <div class="w-100 p-3 h-25 d-inline-block" >
+                        
+                        <form id="searchForm">
+                          <div class="input-group form-container">
+                            <input type="search" name="search" id="gifSearch" class="form-control search-input" placeholder="Search GIPHY" autocomplete="off">
+                            <button class="btn btn-outline-success" id="gifSearchButton">Search</button>
+                          </div>
+                        </form>
+                      </div>
+                    </a>
+                  </li>
+              <!--Gif Rows-->
+                  <div class="container">
+                    <div class="row row-cols-2">
+                      <li>
+                        <div class="col out">
+                          <!-- <a class="gif__item margin-10" href="#"> -->
+                            <div class="out" id="out"></div>
+                          <!-- </a> -->
+                        </div>
+                      <li>
+                        <div class="col out">
+                          <!-- <a class="gif__item margin-10" href="#"> -->
+                            <div class="out" id="out"></div>
+                          <!-- </a> -->
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col">
+                          <a class="gif__item margin-10" href="#">
+                            <div class="out"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col">
+                          <a class="gif__item margin-10" href="#">
+                            <div class="out"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col">
+                          <a class="gif__item margin-10" href="#">
+                            <div class="out"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col">
+                          <a class="gif__item margin-10" href="#">
+                            <div class="out"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col">
+                          <a class="gif__item margin-10" href="#">
+                            <div class="out"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col">
+                          <a class="gif__item margin-10" href="#">
+                            <div class="out"></div>
+                          </a>
+                        </div>
+                      </li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+                <!--Gif Menu-->
+              <button
+                type="submit"
+                id="createPostBtn"
+                class="btn btn-primary my-4">Create Post
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- NEW POST SECTION END -->
+ 
+  <!-- GIF API-->
+  <script>
+    const APIKEY = "evn6IsMCnnpMUchrWJgF1HYW5uHwjuxM";
+    document.addEventListener("DOMContentLoaded", init);
+    function init(){
+      document.getElementById("gifSearchButton").addEventListener("click", ev => {
+        ev.preventDefault();
+        let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=8&q=`;
+        let str = document.getElementById("gifSearch").value.trim();
+        url = url.concat(str);
+        console.log(url);
+        fetch(url)
+        .then(response => response.json() )
+        .then(content => {
+          console.log(content.data);
+          console.log("Meta", content.meta);
+          let gifImg = document.createElement("img");
+          gifImg.src = content.data[0].images.downsized_small.mp4;
+          gifImg.alt = content.data[0].title;
+          let out = document.querySelector('.out');
+        })
+        .catch(err =>{
+          console.error("This didn't work.");
+        })
+
+      });
+      
+    }
+      
+    
+  </script>
+
+
+  <!-- TOP 3 POST SECTION -->
+  <!--************************************************************************************************-->
+  <section id="topPostSection">
+    <div class="container-md" id="topPostContainer">
+      <div id="topPostContent">
+        <h2 id="topPostsTitle">Our top 3 posts</h2>
+        <hr class="mx-auto titleLine" />
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-block" style="width: 100%">
+                <p>
+                  1. This is the top post on this page. OMG it is amazing!!!!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-block" style="width: 100%">
+                <p>
+                  2. This is the second but it would be impressive if there
+                  were more posts etc.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-block" style="width: 100%">
+                <p>3. This is the third most popular post on this page....</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TOP 3 POST SECTION END -->
+
+
+
+  <!-- LATEST POST SECTION -->
+    <!--************************************************************************************************-->
+    <section id="latestPostSection">
+      <h2 id="latestPostsTitle">Latest Posts</h2>
+      <hr class="mx-auto titleLine" />
+      <div id="latestPostsOutput">API content here</div>
+    </section>
+    <!-- LATEST POST SECTION END -->
+
+
+  <!--************************************************************************************************-->
+  <!-- FOOTER -->
+  <!--************************************************************************************************-->
+  <footer class="bg-white text-center text-dark absolute-bottom">
+    <hr class="h" />
+    <!-- horizontal line to seperate footer from other -->
+    <!-- Grid container -->
+    <h2 class="py-2" id="socialMediaTitle">Check us out on Social media!</h2>
+    <div class="container px-4">
+      <!-- Section: Social media -->
+      <section class="mb-4" id="socialMedia">
+        <!-- Facebook -->
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+        <!-- Linkedin -->
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/Prishal-git/Lap1Project"
+          target="”_blank”" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="p-5" id="copyrightContainer">
+      <p id="credits">
+        PenguinJournals © 2022: Created by
+        <a href="https://github.com/iAmash412" target="”_blank”">Aafthab Ashraff</a>,
+        <a href="https://github.com/Scralfie" target="”_blank”">Alfred Kelly</a>,
+        <a href="https://github.com/AlbertStoykov" target="”_blank”">Albert Stoykov</a>
+        and
+        <a href="https://github.com/Prishal-git" target="”_blank”">Prishal Makwana</a>
+      </p>
+      <a href="http://bbc.co.uk" id="termsAndConditions">Terms & Conditions</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- FOOTER END -->
+</body>
+
+</html>
