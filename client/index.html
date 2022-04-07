@@ -23,17 +23,24 @@
   <!--************************************************************************************************-->
   <!-- NAVBAR -->
   <!--************************************************************************************************-->
-  <nav class="navbar navbar-light bg-light fixed-top">
+  <nav class="navbar fixed-top">
     <div class="container-fluid">
-      <a class="h-100 d-inline-block navbar-brand col-sm-3" href="#"><img class="penguin-logo"
-          src="images/penguin-logo.png" alt="Penguin logo" width="40vw" /></a>
-          <h1>PJ</h1>
+      <div class="col-sm-2 d-flex">
+        <a class="h-100 d-inline-block navbar-brand" href="#"
+          ><img
+            class="penguin-logo"
+            src="images/penguin-logo.png"
+            alt="Penguin logo"
+            width="40vw"
+        /></a>
+        <h1>PJ</h1>
+      </div>
 
       <!-- Search Bar-->
       <div class="col-sm-6 col-6 my-auto search-box">
         <div class="input-group form-container">
           <input type="text" name="search" class="form-control search-input" placeholder="" autocomplete="off" />
-          <button class="btn btn-outline-primary" type="submit">
+          <button class="btn" id="searchBtn" type="submit">
             Search
           </button>
         </div>
@@ -135,7 +142,6 @@
     </div>
   </header>
   <!-- HEADER SECTION END -->
-
   <!--************************************************************************************************-->
   <!-- NEW POST SECTION -->
   <!--************************************************************************************************-->
@@ -344,7 +350,7 @@
     <!--************************************************************************************************-->
     <section id="latestPostSection">
       <h2 id="latestPostsTitle">Latest Posts</h2>
-      <hr class="mx-auto titleLine" />
+      <hr class="mx-auto titleLines" />
       <div id="latestPostsOutput">API content here</div>
     </section>
     <!-- LATEST POST SECTION END -->
@@ -353,8 +359,8 @@
   <!--************************************************************************************************-->
   <!-- FOOTER -->
   <!--************************************************************************************************-->
-  <footer class="bg-white text-center text-dark absolute-bottom">
-    <hr class="h" />
+  <footer class="foot text-center text-dark absolute-bottom">
+    <hr class="h" style="height: 2px;"/>
     <!-- horizontal line to seperate footer from other -->
     <!-- Grid container -->
     <h2 class="py-2" id="socialMediaTitle">Check us out on Social media!</h2>
@@ -362,32 +368,32 @@
       <!-- Section: Social media -->
       <section class="mb-4" id="socialMedia">
         <!-- Facebook -->
-        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn  btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
         <!-- Twitter -->
-        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
         <!-- Instagram -->
-        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
         <!-- Linkedin -->
-        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
         <!-- Github -->
-        <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/Prishal-git/Lap1Project"
+        <a class="btn btn-floating m-1" href="https://github.com/Prishal-git/Lap1Project"
           target="”_blank”" role="button"><i class="fab fa-github"></i></a>
       </section>
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
-
+    
     <!-- Copyright -->
     <div class="p-5" id="copyrightContainer">
       <p id="credits">
         PenguinJournals © 2022: Created by
-        <a href="https://github.com/iAmash412" target="”_blank”">Aafthab Ashraff</a>,
-        <a href="https://github.com/Scralfie" target="”_blank”">Alfred Kelly</a>,
-        <a href="https://github.com/AlbertStoykov" target="”_blank”">Albert Stoykov</a>
+        <a href="https://github.com/iAmash412" target="”_blank”" style="color: white;">Aafthab Ashraff</a>,
+        <a  href="https://github.com/Scralfie" target="”_blank”" style="color: white;">Alfred Kelly</a>,
+        <a  href="https://github.com/AlbertStoykov" target="”_blank”" style="color: white;">Albert Stoykov</a>
         and
-        <a href="https://github.com/Prishal-git" target="”_blank”">Prishal Makwana</a>
+        <a href="https://github.com/Prishal-git" target="”_blank”" style="color: white;">Prishal Makwana</a>
       </p>
-      <a href="http://bbc.co.uk" id="termsAndConditions">Terms & Conditions</a>
+      <a href="http://bbc.co.uk" id="termsAndConditions" style="color: white;">Terms & Conditions</a>
     </div>
     <!-- Copyright -->
   </footer>
@@ -395,3 +401,4 @@
 </body>
 
 </html>
+
