@@ -131,7 +131,6 @@ const GIPFY_KEY = "evn6IsMCnnpMUchrWJgF1HYW5uHwjuxM";
 //************************************************************************************************//
 // LATEST (ALL) POSTS FETCH //
 //************************************************************************************************//
-
 let emojiCounter;
 
 async function fetchLatestPosts() {
@@ -142,7 +141,7 @@ async function fetchLatestPosts() {
         // const { title, Content } = data;
 
         let output = ``;
-        
+
         data.forEach(function (post) {
           output += `
         <div class="container-md individualContainer">
@@ -297,7 +296,6 @@ async function fetchLatestPosts() {
 
 fetchLatestPosts();
 
-
 /********************************************************************************************* */
 /*GIF JS*/
 /********************************************************************************************* */
@@ -305,48 +303,47 @@ fetchLatestPosts();
 const APIKEY = "evn6IsMCnnpMUchrWJgF1HYW5uHwjuxM";
 document.addEventListener("DOMContentLoaded", init);
 function init() {
-
-  document.getElementById("gifSearchButton").addEventListener("click", ev => {
+  document.getElementById("gifSearchButton").addEventListener("click", (ev) => {
     ev.preventDefault();
     let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=6&q=`;
     let str = document.getElementById("gifSearch").value.trim();
     url = url.concat(str);
     console.log(url);
     fetch(url)
-      .then(response => response.json())
-      .then(content => {
+      .then((response) => response.json())
+      .then((content) => {
         console.log(content.data);
         console.log("Meta", content.meta);
         //Ugly code
         let gifImg1 = document.createElement("img");
         gifImg1.src = content.data[0].images.fixed_width_small.url;
         gifImg1.alt = content.data[0].title;
-        let out1 = document.querySelector('#gif1');
+        let out1 = document.querySelector("#gif1");
 
         let gifImg2 = document.createElement("img");
         gifImg2.src = content.data[1].images.fixed_width_small.url;
         gifImg2.alt = content.data[1].title;
-        let out2 = document.querySelector('#gif2');
+        let out2 = document.querySelector("#gif2");
 
         let gifImg3 = document.createElement("img");
         gifImg3.src = content.data[2].images.fixed_width_small.url;
         gifImg3.alt = content.data[2].title;
-        let out3 = document.querySelector('#gif3');
+        let out3 = document.querySelector("#gif3");
 
         let gifImg4 = document.createElement("img");
         gifImg4.src = content.data[3].images.fixed_width_small.url;
         gifImg4.alt = content.data[3].title;
-        let out4 = document.querySelector('#gif4');
+        let out4 = document.querySelector("#gif4");
 
         let gifImg5 = document.createElement("img");
         gifImg5.src = content.data[4].images.fixed_width_small.url;
         gifImg5.alt = content.data[4].title;
-        let out5 = document.querySelector('#gif5');
+        let out5 = document.querySelector("#gif5");
 
         let gifImg6 = document.createElement("img");
         gifImg6.src = content.data[5].images.fixed_width_small.url;
         gifImg6.alt = content.data[5].title;
-        let out6 = document.querySelector('#gif6');
+        let out6 = document.querySelector("#gif6");
         out1.appendChild(gifImg1);
         out2.appendChild(gifImg2);
         out3.appendChild(gifImg3);
@@ -354,10 +351,10 @@ function init() {
         out5.appendChild(gifImg5);
         out6.appendChild(gifImg6);
       })
-      .catch(err => {
+      .catch((err) => {
         console.error("This didn't work.");
-      })
-
+      });
   });
-
 }
+
+module.exports = fetchLatestPosts;
