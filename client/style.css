@@ -196,7 +196,7 @@ body {
     "Trebuchet MS", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #heroText {
     margin: 0px 0px;
   }
