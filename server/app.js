@@ -46,7 +46,12 @@ app.post("/journal", (req, res) => {
       post.Content.toString().trim() !== ""
     );
   }
+
   if (isValidPost(req.body)) {
+    var today = new Date();
+    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date + ' ' + time;
     const post = {
       id: posts.length + 1,
       title: req.body.title.toString(),
@@ -55,7 +60,7 @@ app.post("/journal", (req, res) => {
       emojiTwo: 0,
       emojiThree: 0,
       comments: [],
-      timeStamp: "",
+      timeStamp: dateTime
     };
     jsonfile.readFile("posts.json", (err, data) => {
       data.push(post);
