@@ -41,8 +41,13 @@ Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
 
 - HTML/CSS
 - JavaScript 
+  - Node.js
+  - Express
+  - Cors
+  - Jest 
+  - Supertest
 - Bootstrap 5
-- REVIEW: - do we need to add the Giphy API here? and Font Awesome icons? 
+
 ---
 
 # Process
@@ -81,17 +86,30 @@ Organising and planning
 - Dividing up the team and allowing half of the team to focus on front-end and the other on back-end in for the first two days really helped creating the skeletons of the application 
 - Responsive Navbar with detailed Hamburger Menu
 - GIPFY API working
+- Able to POST data via our API to a json file 
+- Created a nicely styled front-end application 
+- Separations of concerns excuted well. (Separated our server/app from the index.js file)
+- Seprated section of code to increase readability of code - great commenting. 
 
-## Chalenges
+## Challenges
 
 - Search bar inside navbar refused to get centered. 
 - Giphy API
+- Lack of communication around merging main caused some corruption. 
+- Fetching wasn't always done so we did dnot alwasy have the latest files locally 
+- Issues with connections - linking front-end to back-end 
+- Setting the json file to retrive and store data was difficult at the start
 
 ---
 
 # Bugs (that still exist)
 
-- Despite GIPFY API working, the individual gifs do not appear inside the gif search menu. (ERROR - SameSite attribute was not set or is invalid).
+- When gif search bar is active, the screen scrolls to the top 
+- Mutiple click on emoji search button pushes data mutiple times 
+- Individual post buttons (emojis, read more/less, view comments) only work on the first post (issue with the classes) 
+- Header text not as responsive as we wanted 
+- Create post button,  not as responsive as we wanted  
+- Output for gif search not aligned (some are overlapping)
 
 ---
 
@@ -100,7 +118,14 @@ Organising and planning
 - Emoji reaction counter data will be stored on the server 
 - Users would be able to add images and videos to their post
 - Emoji reactions for comments 
-- 
+- The individual gifs do not appear inside textarea 
+- Comments are not currently savings or being retrieved
+- Order of the latest post should be the other way around 
+- Filtering posts was not done due to time
+- Separate page for each menu item 
+- Top 3 post section not currently linked
+- Terms and conditions not poping out as a module 
+- Methods to close the gif search container (currently only via gif button 
 
 ---
 
