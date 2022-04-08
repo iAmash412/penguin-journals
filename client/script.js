@@ -2,7 +2,7 @@
 // CREATE NEW POST//
 //************************************************************************************************/
 const form = document.querySelector("form");
-const API_URL = "https://penguin-journal.herokuapp.com/journal";
+const API_URL = "https://penguin-journa1s.herokuapp.com/";
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -135,7 +135,7 @@ let emojiCounter;
 
 async function fetchLatestPosts() {
   try {
-    const res = await fetch("https://penguin-journal.herokuapp.com/journal")
+    const res = await fetch("API_URL")
       .then((res) => res.json())
       .then((data) => {
         // const { title, Content } = data;
