@@ -2,7 +2,7 @@
 // CREATE NEW POST//
 //************************************************************************************************/
 const form = document.querySelector("form");
-const API_URL = "https://penguin-journa1s.herokuapp.com/";
+const API_URL = "https://penguin-journa1s.herokuapp.com/journal";
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
