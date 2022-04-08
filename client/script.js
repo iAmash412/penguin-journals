@@ -135,7 +135,7 @@ let emojiCounter;
 
 async function fetchLatestPosts() {
   try {
-    const res = await fetch("API_URL")
+    const res = await fetch("https://penguin-journa1s.herokuapp.com/journal")
       .then((res) => res.json())
       .then((data) => {
         // const { title, Content } = data;
