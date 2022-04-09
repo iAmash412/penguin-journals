@@ -6,7 +6,7 @@
 
 /* *********************************************************************************** */
 /* Generic  */
-mine #newPostSection,
+#newPostSection,
 #topPostSection,
 #individualPostSection {
   margin-top: 50px;
@@ -571,7 +571,6 @@ body {
 
 #copyrightContainer a:hover {
   text-decoration: none;
-  color: black;
 }
 
 #credits {
@@ -579,14 +578,8 @@ body {
   color: white;
 }
 
-#credits a {
-  color: black;
-}
-
-#termsAndConditions {
-  color: black;
-}
-
+#credits a,
+#termsAndConditions,
 #socialMediaTitle {
   color: #ffffff;
 }
@@ -594,6 +587,5 @@ body {
 @media screen and (min-width: 992px) {
   #termsAndConditions {
     float: right;
-    color: black;
   }
 }
