@@ -7,11 +7,17 @@ Gebru Lap 1 Project Team Penguins:
 - Prishal Makwana
 
 
-Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
+Released 01/04/2022 14:00, Sumbitted 08/04/2022 14:00
 
 ## Description 
-[What does the application do]
-  * pengu.com is a community journaling website, where people can share and spred their love for penguins,<br> as well as tackle topics related to climate change.
+
+  * Penguin Journals is a Community journaling application
+  * Users create, react and comment on posts about:
+    * Conservation work for penguins
+    * Topics that tackle climate change which impact penguins 
+    * Day to day activities that help the penguins 
+    * Scientific discovery around penguins 
+    * Their love for penguins 
 
 
 ---
@@ -19,6 +25,8 @@ Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
 # Installation & Usage
 
 ## Installation
+
+Installation is not required as this app has been deployed. However, prior to deployement, installation instructions consisted of:
 
 - Clone or download the repo
 - cd into the Lap1Project/server folder in your terminal 
@@ -32,6 +40,12 @@ Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
 
 ## Usage
 
+This current release of the project has our server-side running on Heroku and client-side running on netlify. 
+  - Server - https://penguin-journa1s.herokuapp.com/
+  - Client - https://penguin-journals.netlify.app/
+
+If you wish to run the application locally, please follow the following: 
+- Update client/index.js API to http://localhost:3000/journal and save 
 - cd to the server folder in your terminal & run npm start to launch the server
 - Navigate to the client folder and open the index.html file in your browser to see the application UI
 
@@ -39,14 +53,14 @@ Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
 
 # Technologies 
 
-- HTML/CSS
+- HTML
+- CSS (Bootstrap) 
 - JavaScript 
   - Node.js
   - Express
   - Cors
   - Jest 
   - Supertest
-- Bootstrap 5
 
 ---
 
